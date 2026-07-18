@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# npm configuration
+.npmrc
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# IIS logs
+iisnode/
+src/iisnode/
+
+# Build folders
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Coverage
+coverage/

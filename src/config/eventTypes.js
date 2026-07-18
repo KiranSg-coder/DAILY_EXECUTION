@@ -1,0 +1,45 @@
+// src/config/eventTypes.js
+const EVENT_TYPES = {
+    // Day Lifecycle Events (Daily Execution)
+    DAY_CREATED: 'DAY_CREATED',
+    DAY_STARTED: 'DAY_STARTED',
+    DAY_CLOSED: 'DAY_CLOSED',
+  
+    // Rule Events (Daily Execution)
+    RULE_COMPLETED: 'RULE_COMPLETED',
+    RULE_PROOF_SUBMITTED: 'RULE_PROOF_SUBMITTED',
+    REFLECTION_SUBMITTED: 'REFLECTION_SUBMITTED',
+  
+    // Evaluation Events (Rule Engine)
+    DAY_EVALUATED: 'DAY_EVALUATED',
+    VERDICT_PASS: 'VERDICT_PASS',
+    VERDICT_FAIL: 'VERDICT_FAIL',
+    STREAK_UPDATED: 'STREAK_UPDATED',
+  
+    // Mode Change Events (Rule Engine)
+    MODE_CHANGED_TO_MINIMUM: 'MODE_CHANGED_TO_MINIMUM',
+    MODE_CHANGED_TO_STANDARD: 'MODE_CHANGED_TO_STANDARD',
+  
+    // Achievement Events (Rule Engine)
+    ACHIEVEMENT_UNLOCKED: 'ACHIEVEMENT_UNLOCKED',
+  
+    // User / Ruleset Events (Rule Management)
+    USER_ONBOARDED: 'USER_ONBOARDED',
+    RULESET_CREATED: 'RULESET_CREATED',
+    RULESET_UPDATED: 'RULESET_UPDATED',
+
+    // Notification Events (Scheduler → Notification Service)
+    DAY_END_NUDGE: 'DAY_END_NUDGE',
+    PREVIOUS_DAY_INCOMPLETE: 'PREVIOUS_DAY_INCOMPLETE',
+  };
+  
+  const EVENT_CATEGORIES = {
+    DAY_LIFECYCLE: 'DAY_LIFECYCLE',
+    RULE: 'RULE',
+    VERDICT: 'VERDICT',
+    MODE_CHANGE: 'MODE_CHANGE',
+    ACHIEVEMENT: 'ACHIEVEMENT',
+    USER: 'USER',
+  };
+  
+  module.exports = { EVENT_TYPES, EVENT_CATEGORIES };
